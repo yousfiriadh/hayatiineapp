@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.yousfi.hayatiineApp.ui.signUp.SignUpActivityViewModel" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_hayatiine"
+    tools:context=".ui.signUp.SignUpActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="100dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="@dimen/circleimage_50dp"
+        android:background="@drawable/circle_outline_white"
+        android:padding="@dimen/circle_6dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linear"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layouts_signup_50dp"
+        android:layout_marginEnd="@dimen/layouts_signup_50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circleImageView">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_text_10dp"
+            android:autofillHints=""
+            android:hint="@string/name"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="14dp"
+            android:textColor="@color/color_standard"
+            android:textColorHint="@color/color_standard"
+             />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_text_10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="14dp"
+            android:hint="@string/last_name"
+            android:textColor="@color/color_standard"
+            android:textColorHint="@color/color_standard" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_text_10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="14dp"
+            android:hint="@string/email"
+            android:textColor="@color/color_standard"
+            android:textColorHint="@color/color_standard" />
+
+        <EditText
+            android:id="@+id/tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_text_10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="14dp"
+            android:hint="@string/tel"
+            android:textColor="@color/color_standard"
+            android:textColorHint="@color/color_standard"
+             />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_text_10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="14dp"
+            android:hint="@string/password"
+            android:textColor="@color/color_standard"
+            android:textColorHint="@color/color_standard"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layouts_signup_50dp"
+        android:layout_marginEnd="@dimen/layouts_signup_50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear">
+
+        <Button
+            android:id="@+id/btn_connecter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/button_sigup_50dp"
+            android:background="@drawable/rate_us"
+            android:fontFamily="@font/roboto_bold"
+            android:onClick="@{()->viewModel.navigateToHome()}"
+            android:text="@string/connecter"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/mot_de_passe_oublier"
+            android:textAlignment="center"
+            android:textColor="@color/color_standard"
+            android:textColorHint="@color/color_standard" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

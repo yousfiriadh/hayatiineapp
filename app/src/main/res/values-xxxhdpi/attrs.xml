@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DotsIndicator">
+        <attr name="dot_width" format="dimension" />
+        <attr name="dot_height" format="dimension" />
+        <attr name="dot_margin" format="dimension" />
+        <attr name="dot_animator" format="reference" />
+        <attr name="dot_animator_reverse" format="reference" />
+        <attr name="dot_drawable" format="reference" />
+        <attr name="dot_drawable_unselected" format="reference" />
+
+        <attr name="dot_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="dot_gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="vpi_view_pager" format="reference" />
+        <attr name="vpi_items_count" format="integer" />
+        <attr name="vpi_item_selected" format="integer" />
+        <attr name="vpi_item_type" format="enum">
+            <enum name="oval" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="vpi_orientation" format="enum">
+            <enum name="horizontal" value="1" />
+            <enum name="vertical" value="2" />
+        </attr>
+        <attr name="vpi_selected_primary_color" format="color" />
+        <attr name="vpi_selected_secondary_color" format="color" />
+        <attr name="vpi_unselected_primary_color" format="color" />
+        <attr name="vpi_unselected_secondary_color" format="color" />
+        <attr name="vpi_item_elevation" format="dimension" />
+        <attr name="vpi_item_width" format="dimension" />
+        <attr name="vpi_item_height" format="dimension" />
+        <attr name="vpi_item_margin" format="dimension" />
+
+
+
+
+        <attr name="strokeWith" format="integer"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="topLeftRadius" format="dimension"/>
+        <attr name="topRightRadius" format="dimension"/>
+        <attr name="bottomLeftRadius" format="dimension"/>
+        <attr name="bottomRightRadius" format="dimension"/>
+
+    </declare-styleable>
+</resources>

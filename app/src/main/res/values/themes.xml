@@ -1,0 +1,131 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.HayatiineApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_standard</item>
+        <item name="colorPrimaryVariant">@color/color_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_blue</item>
+        <item name="colorSecondaryVariant">@color/color_standard</item>
+        <item name="colorOnSecondary">@color/color_standard</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="FieldRounded">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_ractangle_rounded_stroke</item>
+        <item name="android:textColor">@color/color_standard</item>
+        <item name="android:textColorHint">@color/color_standard</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:padding">@dimen/spacing_middle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">start</item>
+    </style>
+    <style name="spinnerRounded">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_ractangle_rounded_stroke</item>
+        <item name="android:textColor">@color/color_standard</item>
+        <item name="android:textColorHint">@color/color_standard</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:padding">@dimen/spacing_middle1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">start</item>
+    </style>
+    <style name="textRounded">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_ractangle_rounded_stroke</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:padding">@dimen/spacing_middle2</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">start</item>
+    </style>
+    <style name="MaterialButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/font_size_normal</item>
+        <item name="android:paddingTop">@dimen/spacing_standard</item>
+        <item name="android:paddingBottom">@dimen/spacing_standard</item>
+        <item name="android:paddingStart">@dimen/spacing_standard</item>
+        <item name="android:paddingEnd">@dimen/spacing_standard</item>
+        <item name="android:theme">@style/Theme.MaterialComponents.Light</item>
+        <item name="cornerRadius">@dimen/spacing_xxxlarge</item>
+
+    </style>
+    <style name="MaterialButtonStyle.Stroked">
+        <item name="backgroundTint">@color/white</item>
+        <item name="strokeColor">@color/color_standard</item>
+        <item name="strokeWidth">@dimen/stroke_width</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="MaterialButtonStyle.Filled">
+        <item name="backgroundTint">@color/color_standard</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="rippleColor">@color/white</item>
+    </style>
+    <dimen name="font_size_medium">14dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_middle1">9dp</dimen>
+    <dimen name="spacing_standard_new">16dp</dimen>
+    <dimen name="spacing_middle2">14dp</dimen>
+
+    <array name="etat">
+        <item>Etat</item>
+        <item>New</item>
+        <item>Old</item>
+    </array>
+    <array  name="couleur" >
+        <item>Couleur</item>
+        <item>...</item>
+        <item>...</item>
+    </array>
+
+
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:textColor">@color/color_standard</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+    <style name="SpinnerInfo" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:text">"Plus d'info"</item>
+
+    </style>
+
+    <string-array name="steps_titles">
+        <item>Name</item>
+        <item>Description</item>
+        <item>Time</item>
+        <item>Week schedule</item>
+    </string-array>
+    <string-array name="steps_subtitles">
+        <item>Name of the alarm</item>
+        <item>Description of the alarm</item>
+        <item>Time when the alarm will go off</item>
+        <item>Week schedule of the alarm</item>
+    </string-array>
+    <string-array name="week_days">
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+        <item>S</item>
+    </string-array>
+    <string-array name="week_days_extended">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+</resources>

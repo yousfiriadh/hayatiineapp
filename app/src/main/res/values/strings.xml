@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">hayatiine</string>
+    <string name="mot_de_passe_oublier">mot de passe oublier?</string>
+    <string name="connecter">Connecter</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="last_name">Prénom</string>
+    <string name="tel">Tel</string>
+    <string name="s_inscrire">S\'inscrire</string>
+    <string name="name_sarra">Sarra</string>
+    <string name="marque">Marque</string>
+    <string name="mes_favoris">Mes favoris</string>
+    <string name="mes_commandes">Mes commandes</string>
+    <string name="plusInfo">Plus d\'info</string>
+    <string name="notification">Notification</string>
+    <string name="parametres">Paramètres</string>
+    <string name="hint_titre">Titre</string>
+    <string name="description">Description</string>
+    <string name="hint_taille">Taille</string>
+    <string name="hint_marque">Marque</string>
+    <string name="hint_prix_vente">Prix vente</string>
+    <string name="hint_prix_origine">Prix d\'origine</string>
+    <string name="lbl_jeVends">Je vends</string>
+</resources>

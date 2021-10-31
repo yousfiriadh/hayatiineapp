@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <shape android:shape="rectangle" >
+            <stroke
+                android:width="1dp"
+                android:color="@color/editText_background" />
+            <solid android:color="@color/white"/>
+            <corners android:radius="5dp" />
+        </shape>
+
+    </item>
+
+    <item android:gravity="center_vertical|right"  android:right="20dp" android:drawable="@drawable/ic_baseline" android:width="25dp" android:height="25dp" >
+        <layer-list
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <item
+                android:width="20dp"
+                android:height="10dp"
+                android:bottom="21dp"
+                android:gravity="center">
+                <shape android:shape="rectangle" >
+                    <solid android:color="@color/white"  />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</layer-list>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.yousfi.hayatiineApp.ui.login.LoginViewModel" />
+    </data>
+    
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_hayatiine"
+    tools:context=".ui.login.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layouts_signin_50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="@dimen/layouts_signin_50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/color_standard"
+            android:hint="@string/email"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="14dp"
+            android:inputType="text"
+            android:text="@={viewModel.email}"
+            android:textColor="@color/color_standard"
+            android:textColorHint="@color/color_standard"
+            android:textColorLink="@color/color_standard" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layouts_signin_50dp"
+            android:backgroundTint="@color/color_standard"
+            android:hint="@string/password"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="14dp"
+            android:inputType="textPassword"
+            android:text="@={viewModel.password}"
+            android:textColor="@color/color_standard"
+            android:textColorHint="@color/color_standard"
+            android:textColorLink="@color/color_standard" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layouts_signin_50dp"
+        android:layout_marginEnd="@dimen/layouts_signin_50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearlayout1">
+
+        <Button
+            android:id="@+id/btn_connecter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rate_us"
+            android:fontFamily="@font/roboto_bold"
+            android:onClick="@{()->viewModel.navigateToHome()}"
+            android:text="Connecter"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            tools:text="@string/connecter" />
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/s_inscrire"
+            android:fontFamily="@font/roboto_bold"
+            android:onClick="@{()->viewModel.navigateToSignup()}"
+            android:textAlignment="center"
+            android:textColor="@color/color_standard"
+            android:textColorHint="@color/color_standard" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout3">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            tools:visibility="gone" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
